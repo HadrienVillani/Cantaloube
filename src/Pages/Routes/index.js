@@ -12,21 +12,40 @@ import ScrollToTop from '../utilities/ScrollToTop';
 function index() {
   return (
     <div>
-      <Router>
-        <ScrollToTop />
-        <Header />
-        <Slider />
-        <Routes>
-          <Route exact path='/' element={<Accueil />} />
-          <Route path='/Cantaloube/Bijouterie' element={<Bijouterie />} />
-          <Route path='/Cantaloube/Horlogerie' element={<Horlogerie />} />
-          <Route path='/Cantaloube/Galery' element={<Galery />} />
-          <Route path='/Cantaloube/Contact' element={<Contact />} />
-          <Route exact path='*' element={<Accueil />} />
-        </Routes>
-      </Router>
+      <ScrollToTop />
+      <Header />
+      <Slider />
+      <Routes>
+        <Route exact path='/' element={<Accueil />} />
+        <Route path='/Cantaloube/Bijouterie' element={<Bijouterie />} />
+        <Route path='/Cantaloube/Horlogerie' element={<Horlogerie />} />
+        <Route path='/Cantaloube/Galery' element={<Galery />} />
+        <Route path='/Cantaloube/Contact' element={<Contact />} />
+        <Route exact path='*' element={<Accueil />} />
+      </Routes>
     </div>
   );
 }
 
 export default index;
+// function index() {
+//   return (
+//     <div>
+//       <Router>
+//         <ScrollToTop />
+//         <Header />
+//         <Slider />
+//         <Routes>
+//           <Route exact path='/' element={<Accueil />} />
+//           <Route path='/Cantaloube/Bijouterie' element={<Bijouterie />} />
+//           <Route path='/Cantaloube/Horlogerie' element={<Horlogerie />} />
+//           <Route path='/Cantaloube/Galery' element={<Galery />} />
+//           <Route path='/Cantaloube/Contact' element={<Contact />} />
+//           <Route exact path='*' element={<Accueil />} />
+//         </Routes>
+//       </Router>
+//     </div>
+//   );
+// }
+
+// export default index;
