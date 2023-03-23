@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Cantaloube/precache-manifest.5ee4dd9e3de309763cfa671850f4eaed.js"
+  "/Cantaloube/precache-manifest.227635e59e9c76e0a99d12f6cb119813.js"
 );
 
 workbox.clientsClaim();
