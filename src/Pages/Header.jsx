@@ -152,19 +152,19 @@ const Header = () => {
       </div>
       <div className='headerUlContainer'>
         <ul className='menuUl'>
-          <Link to={'/Cantaloube'}>
+          <Link to={'/'}>
             <li id={'Accueil'}>Accueil</li>
           </Link>
-          <Link to={'/Cantaloube/Bijouterie'}>
+          <Link to={'/Bijouterie'}>
             <li id={'Bijouterie'}>Bijouterie</li>
           </Link>
-          <Link to={'/Cantaloube/Horlogerie'}>
+          <Link to={'/Horlogerie'}>
             <li id={'Horlogerie'}>Horlogerie</li>
           </Link>
-          <Link to={'/Cantaloube/Galery'}>
+          <Link to={'/Galery'}>
             <li id={'Galery'}>Galerie photos</li>
           </Link>
-          <Link to={'/Cantaloube/Contact'}>
+          <Link to={'/Contact'}>
             <li id={'Contact'}>Contact</li>
           </Link>
         </ul>
