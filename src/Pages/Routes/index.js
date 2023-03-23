@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Accueil from '../Accueil';
 import Header from '../Header';
 import Bijouterie from '../Bijouterie';
@@ -14,9 +14,9 @@ function index() {
   return (
     <div>
       <Fragment>
-        <ScrollToTop />
+        {/* <ScrollToTop />
         <Header />
-        <Slider />
+        <Slider /> */}
         <Routes>
           <Route exact path='/' element={<Accueil />} />
           <Route path='/Cantaloube/Bijouterie' element={<Bijouterie />} />
