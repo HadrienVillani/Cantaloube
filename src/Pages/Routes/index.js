@@ -14,9 +14,9 @@ function index() {
   return (
     <div>
       <Fragment>
-        {/* <ScrollToTop />
+        <ScrollToTop />
         <Header />
-        <Slider /> */}
+        <Slider />
         <Routes>
           <Route exact path='/' element={<Accueil />} />
           <Route path='/Bijouterie' element={<Bijouterie />} />
