@@ -48,7 +48,7 @@ function Contact() {
                 <textarea type='text' />
               </div>
               <div>
-                <input name='submit' value='Envoyer' />
+                <button>Envoyer</button>
               </div>
             </form>
           </div>

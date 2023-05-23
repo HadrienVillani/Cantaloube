@@ -15,6 +15,9 @@ aside {
   justify-content: center;
   display: flex;
 }
+a {
+  color: black;
+}
 
 h1 {
   text-align: center;
@@ -1249,6 +1252,8 @@ a {
   margin-top: 20px;
   font-size: 16px;
   outline: none;
+  border-radius: 0;
+  border: solid grey 1px;
 }
 .contactForm form > div {
   display: flex;
@@ -1267,6 +1272,22 @@ a {
   padding: 20px;
   margin-top: 20px;
   outline: none;
+  border-radius: 0;
+  border: solid grey 1px;
+}
+.contactForm button {
+  padding: 15px 30px 15px 30px;
+  border: solid 1px black;
+  font-size: var(--text);
+  margin-top: 30px;
+  font-family: var(--title);
+  cursor: pointer;
+  transition: 0.8s;
+  background-color: white;
+}
+.contactForm button:hover {
+  background-color: black;
+  color: white;
 }
 .contactForm form > div:last-of-type {
   display: flex;

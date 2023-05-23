@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "08ecd65598a28cc6e9af",
-    "url": "/Cantaloube/static/css/main.92532721.chunk.css"
+    "revision": "b594f5cbe22dc389f52f",
+    "url": "/Cantaloube/static/css/main.a2b64b17.chunk.css"
   },
   {
-    "revision": "08ecd65598a28cc6e9af",
-    "url": "/Cantaloube/static/js/main.08ecd655.chunk.js"
+    "revision": "b594f5cbe22dc389f52f",
+    "url": "/Cantaloube/static/js/main.b594f5cb.chunk.js"
   },
   {
     "revision": "dc8521b8914d5b863709",
@@ -80,12 +80,12 @@ self.__precacheManifest = [
     "url": "/Cantaloube/static/media/montreSix.7a4bedca.webp"
   },
   {
-    "revision": "af7ae505a9eed503f8b8e6982036873e",
-    "url": "/Cantaloube/static/media/fontawesome-webfont.af7ae505.woff2"
-  },
-  {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
     "url": "/Cantaloube/static/media/fontawesome-webfont.674f50d2.eot"
+  },
+  {
+    "revision": "af7ae505a9eed503f8b8e6982036873e",
+    "url": "/Cantaloube/static/media/fontawesome-webfont.af7ae505.woff2"
   },
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
@@ -100,7 +100,7 @@ self.__precacheManifest = [
     "url": "/Cantaloube/static/media/fontawesome-webfont.912ec66d.svg"
   },
   {
-    "revision": "28dc96080f4e34716df9f2f385e64085",
+    "revision": "a9493a757294636c817bacfc5c4311ff",
     "url": "/Cantaloube/index.html"
   }
 ];
