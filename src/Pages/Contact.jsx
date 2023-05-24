@@ -1,20 +1,16 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Information from './Information';
-import { scrollAnimation } from './ScrollAnimation';
 
 function Contact() {
-  useEffect(() => {
-    scrollAnimation();
-  });
   return (
     <section className='contact'>
       <section className='contactSectionOne'>
         <aside>
-          <div className='containerAnimation'>
-            <h2 className='animationTitle'>
+          <div>
+            <h2>
               Comment se rendre à notre boutique de bijouterie-joaillerie ?
             </h2>
-            <p className='animationText'>
+            <p>
               Notre Bijouterie-Joaillerie Cantaloube se situe en plein cœur du
               centre-ville de la ville de Meaux. Notre équipe de bijoutiers vous
               réserve un accueil chaleureux et vous conseille dans votre choix
@@ -26,10 +22,8 @@ function Contact() {
       <Information />
       <section className='contactForm'>
         <aside>
-          <div className='contactFormCont containerAnimation'>
-            <h2 className='animationTitle'>
-              Formulaire de contact de notre bijouterie-joaillerie
-            </h2>
+          <div className='contactFormCont'>
+            <h2>Formulaire de contact de notre bijouterie-joaillerie</h2>
             <form action=''>
               <div>
                 <label htmlFor=''>Nom</label>

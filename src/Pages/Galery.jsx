@@ -57,15 +57,15 @@ function Galery() {
   });
   return (
     <section>
-      <section className='galerySectionOne animationScroll'>
+      <section className='galerySectionOne""'>
         <aside>
-          <article className='containerAnimation'>
+          <article>
             <h3>Fabricant de bijoux élu Meilleur Ouvrier de France</h3>
-            <h2 className='animationTitle'>
+            <h2>
               Une collection de bijoux et de montres confectionnée par l'un des
               Meilleurs Ouvriers en France
             </h2>
-            <p className='animationText'>
+            <p>
               La Joaillerie Cantaloube est implantée à Meaux dans le département
               de la Seine-et-Marne depuis 1845. Découvrez cet univers enchanteur
               à travers des créations sublimées par des pierres de couleurs,

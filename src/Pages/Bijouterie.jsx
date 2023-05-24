@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Information from './Information';
 import { scrollAnimation } from './ScrollAnimation';
 import { Link } from 'react-router-dom';
+import Slider from './Slider';
 function Bijouterie() {
   useEffect(() => {
     scrollAnimation();
@@ -9,6 +10,7 @@ function Bijouterie() {
 
   return (
     <section className='jewelry'>
+      <Slider />
       <section className='jewelrySectionOne animationScroll'>
         <aside>
           <article>
@@ -35,7 +37,7 @@ function Bijouterie() {
       <section className='jewelrySectionTwo'>
         <aside>
           <article>
-            <img src={require('../assets/bagueFour.webp')} alt='' />
+            <img src={require('../assets/fourthRing.webp')} alt='' />
             <div className='jewelrySectionTwoText '>
               <div className='containerAnimation'>
                 <h3>Fabricant de bijoux élu Meilleur Ouvrier de France</h3>
@@ -133,7 +135,7 @@ function Bijouterie() {
                 <button>Contactez-nous</button>
               </Link>
             </div>
-            <img src={require('../assets/bagueSix.webp')} alt='' />
+            <img src={require('../assets/sixthRing.webp')} alt='' />
           </article>
         </aside>
       </section>
@@ -141,10 +143,10 @@ function Bijouterie() {
         <aside>
           <div className='galeryHomeCont'>
             <div className='galeryHomeImg'>
-              <img src={require('../assets/bagueThree.webp')} alt='' />
-              <img src={require('../assets/bagueTwo.webp')} alt='' />
-              <img src={require('../assets/bagueFour.webp')} alt='' />
-              <img src={require('../assets/bagueSix.webp')} alt='' />
+              <img src={require('../assets/thirdRing.webp')} alt='' />
+              <img src={require('../assets/secondRing.webp')} alt='' />
+              <img src={require('../assets/fourthRing.webp')} alt='' />
+              <img src={require('../assets/sixthRing.webp')} alt='' />
             </div>
             <article className='containerAnimation'>
               <h3>Bijouterie à l’écoute de vos souhaits</h3>

@@ -13,8 +13,8 @@ function Information() {
   });
   return (
     <section className='information'>
-      <aside className='informationContainer containerAnimation'>
-        <h2 className='animationTitle'>Nos Informations</h2>
+      <aside className='informationContainer'>
+        <h2>Nos Informations</h2>
         <div className='informationContainerText'>
           <article>
             <div className='informationContact'>

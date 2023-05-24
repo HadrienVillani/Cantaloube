@@ -14,6 +14,7 @@ const Header = () => {
   const eventClick = () => {
     delayOne === true ? setdelayOne(false) : setdelayOne(true);
   };
+
   useEffect(() => {
     setTimeout(function orientation() {
       delayOne
@@ -56,10 +57,10 @@ const Header = () => {
     const headerResize = document.querySelector('.headerResize');
     const allLi = document.querySelectorAll('.menuUl li');
     const allLiRes = document.querySelectorAll('.headerResize li');
-
     allLi.forEach((e) => {
       if (e.id === location.pathname.slice('1')) {
         e.style.color = 'var(--gold)';
+        console.log('ok');
       } else {
         e.style.color = 'black';
       }
@@ -128,7 +129,7 @@ const Header = () => {
       <div className='containerUl'>
         <ul className='menuUl' ref={menuUl}>
           <Link to={'/Accueil'} onClick={eventClick}>
-            <li id={'Accueil'}>Accueil</li>
+            <li id={''}>Accueil</li>
           </Link>
           <Link to={'/Bijouterie'} onClick={eventClick}>
             <li id={'Bijouterie'}>Bijouterie</li>
@@ -153,7 +154,7 @@ const Header = () => {
       <div className='headerUlContainer'>
         <ul className='menuUl'>
           <Link to={'/'}>
-            <li id={'Accueil'}>Accueil</li>
+            <li id={''}>Accueil</li>
           </Link>
           <Link to={'/Bijouterie'}>
             <li id={'Bijouterie'}>Bijouterie</li>

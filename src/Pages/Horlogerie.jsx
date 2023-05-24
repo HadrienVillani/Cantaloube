@@ -2,12 +2,14 @@ import React, { useEffect } from 'react';
 import Information from './Information';
 import { scrollAnimation } from './ScrollAnimation';
 import { Link } from 'react-router-dom';
+import Slider from './Slider';
 function Horlogerie() {
   useEffect(() => {
     scrollAnimation();
   });
   return (
     <section className='watchmaking'>
+      <Slider />
       <section className='watchmakingSectionOne'>
         <aside>
           <article>
@@ -36,7 +38,7 @@ function Horlogerie() {
       <section className='watchmakingSectionTwo'>
         <aside>
           <article>
-            <img src={require('../assets/montreOne.webp')} alt='' />
+            <img src={require('../assets/firstWatch.webp')} alt='' />
             <div className='containerAnimation'>
               <h3>Vaste choix de modèles de montres femme et montres homme</h3>
               <h2 className='animationTitle'>
@@ -102,10 +104,10 @@ function Horlogerie() {
         <aside>
           <div className='galeryHomeCont'>
             <div className='galeryHomeImg'>
-              <img src={require('../assets/montreThree.webp')} alt='' />
-              <img src={require('../assets/montreFive.webp')} alt='' />
-              <img src={require('../assets/montreFour.webp')} alt='' />
-              <img src={require('../assets/montreTwo.webp')} alt='' />
+              <img src={require('../assets/thirdWatch.webp')} alt='' />
+              <img src={require('../assets/fifthWatch.webp')} alt='' />
+              <img src={require('../assets/fourthWatch.webp')} alt='' />
+              <img src={require('../assets/secondWatch.webp')} alt='' />
             </div>
             <article className='containerAnimation'>
               <h3>Bijouterie à l’écoute de vos souhaits</h3>

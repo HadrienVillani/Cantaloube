@@ -2,12 +2,14 @@ import React, { useEffect } from 'react';
 import Information from './Information';
 import { scrollAnimation } from './ScrollAnimation';
 import { Link } from 'react-router-dom';
+import Slider from './Slider';
 function Homes() {
   useEffect(() => {
     scrollAnimation();
   });
   return (
     <div className='containerContent'>
+      <Slider />
       <section className='sectionOne animationScroll'>
         <aside>
           <article className='containerAnimation'>
@@ -113,10 +115,10 @@ function Homes() {
         <aside>
           <div className='galeryHomeCont'>
             <div className='galeryHomeImg'>
-              <img src={require('../assets/bagueThree.webp')} alt='' />
-              <img src={require('../assets/bagueTwo.webp')} alt='' />
-              <img src={require('../assets/bagueFour.webp')} alt='' />
-              <img src={require('../assets/bagueSix.webp')} alt='' />
+              <img src={require('../assets/thirdRing.webp')} alt='' />
+              <img src={require('../assets/secondRing.webp')} alt='' />
+              <img src={require('../assets/fourthRing.webp')} alt='' />
+              <img src={require('../assets/sixthRing.webp')} alt='' />
             </div>
             <article className='containerAnimation'>
               <h3>Bijouterie à l’écoute de vos souhaits</h3>
