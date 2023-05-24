@@ -57,7 +57,7 @@ function Galery() {
   });
   return (
     <section>
-      <section className='galerySectionOne""'>
+      <section className='galerySectionOne'>
         <aside>
           <article>
             <h3>Fabricant de bijoux élu Meilleur Ouvrier de France</h3>

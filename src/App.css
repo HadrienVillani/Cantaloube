@@ -694,8 +694,9 @@ a {
 /* --------------------------Galery--------------------------- */
 .galerySectionOne {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
-  padding: 100px 0 100px 0;
+  padding: 20vh 0 100px 0;
 }
 .galerySectionOne article {
   padding-left: 50px;
@@ -1608,6 +1609,7 @@ a {
   }
   .galerySectionOne {
     text-align: center;
+    padding-top: 20vh !important;
   }
   .contactSectionOne div {
     width: calc(80% - 60px);
@@ -1713,7 +1715,12 @@ a {
   }
   .galerySectionOne {
     text-align: initial;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15vh !important;
   }
+
   .galerySectionOne article {
     padding: 30px;
     width: 70%;
@@ -1748,5 +1755,8 @@ a {
   .contactForm textarea {
     width: 100%;
     height: 30vh;
+  }
+  .contactSectionOne {
+    padding-top: 18vh !important;
   }
 }

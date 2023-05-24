@@ -60,7 +60,6 @@ const Header = () => {
     allLi.forEach((e) => {
       if (e.id === location.pathname.slice('1')) {
         e.style.color = 'var(--gold)';
-        console.log('ok');
       } else {
         e.style.color = 'black';
       }

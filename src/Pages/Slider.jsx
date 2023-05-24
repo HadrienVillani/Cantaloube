@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 function Slider() {
+  const [loading, settLoading] = useState(true);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth });
   const [imgSize, setImgSize] = useState();
   const [nbSlide, setNbSlide] = useState();
@@ -55,38 +56,40 @@ function Slider() {
     }
   }, [location.pathname, dimensions]);
   useEffect(() => {
-    setTimeout(() => {
-      const prev = document.querySelector('.prev');
-      const next = document.querySelector('.next');
-      const container = document.querySelector('.sliderContainer ');
-      let pos = 0;
-      const imgs = document.querySelectorAll('.slider');
-      container.style.left = 0 + 'px';
-      imgs.forEach((e) => {
-        e.style.left = 0 + 'px';
-      });
-      setImgSize(imgs[0].offsetWidth);
-      setNbSlide(imgs.length);
-      next.addEventListener('click', () => {
-        pos = pos + imgSize;
-        if (pos > 0) {
-          sliderPack.current.style.left = (-nbSlide + 1) * imgSize + 'px';
-          pos = (-nbSlide + 1) * imgSize;
-        } else {
-          sliderPack.current.style.left = pos + 'px';
-        }
-      });
+    if (loading) {
+      setTimeout(() => {
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        const container = document.querySelector('.sliderContainer ');
+        let pos = 0;
+        const imgs = document.querySelectorAll('.slider');
+        container.style.left = 0 + 'px';
+        imgs.forEach((e) => {
+          e.style.left = 0 + 'px';
+        });
+        setImgSize(imgs[0].offsetWidth);
+        setNbSlide(imgs.length);
+        next.addEventListener('click', () => {
+          pos = pos + imgSize;
+          if (pos > 0) {
+            sliderPack.current.style.left = (-nbSlide + 1) * imgSize + 'px';
+            pos = (-nbSlide + 1) * imgSize;
+          } else {
+            sliderPack.current.style.left = pos + 'px';
+          }
+        });
 
-      prev.addEventListener('click', () => {
-        pos = pos - imgSize;
-        if (pos < (-nbSlide + 1) * imgSize) {
-          sliderPack.current.style.left = 0 + 'px';
-          pos = 0;
-        } else {
-          sliderPack.current.style.left = pos + 'px';
-        }
-      });
-    }, 100);
+        prev.addEventListener('click', () => {
+          pos = pos - imgSize;
+          if (pos < (-nbSlide + 1) * imgSize) {
+            sliderPack.current.style.left = 0 + 'px';
+            pos = 0;
+          } else {
+            sliderPack.current.style.left = pos + 'px';
+          }
+        });
+      }, 400);
+    }
   }, [imgSize, nbSlide]);
 
   return dimensions < 1400 || window.innerWidth < 1400 ? (
@@ -94,27 +97,15 @@ function Slider() {
       <aside>
         <div className='sliderContainer slider-1'>
           <div className='sliderPack' ref={sliderPack}>
-            <div className='slider '>
-              <img
-                className='sliderImg'
-                src={require('../assets/thirdRing.webp')}
-                alt=''
-              />
-            </div>
-            <div className='slider'>
-              <img
-                className='sliderImg'
-                src={require('../assets/firstRing.webp')}
-                alt=''
-              />
-            </div>
-            <div className='slider'>
-              <img
-                className='sliderImg'
-                src={require('../assets/fourthRing.webp')}
-                alt=''
-              />
-            </div>
+            {changeImgs.map((picture, index) => (
+              <div key={index} className='slider'>
+                <img
+                  className='sliderImg'
+                  src={require('../assets/' + picture + '.webp')}
+                  alt=''
+                />
+              </div>
+            ))}
           </div>
         </div>
         <div className='containerButton'>

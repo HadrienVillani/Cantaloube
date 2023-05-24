@@ -11,7 +11,6 @@ export const scrollAnimation = () => {
       if (window.innerHeight < 700) {
         heightSize = 300;
       }
-      console.log(heightSize);
       containerAnimation.forEach((e) => {
         if (elementInView(e, heightSize)) {
           for (let i = 0; i <= e.children.length - 1; i++) {
