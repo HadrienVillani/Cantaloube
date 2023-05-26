@@ -2,35 +2,33 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 function Slider() {
-  const [loading, settLoading] = useState(true);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth });
   const [imgSize, setImgSize] = useState();
   const [nbSlide, setNbSlide] = useState();
   const location = useLocation();
   const [titlePage, setTitlePage] = useState('');
   let sliderPack = useRef();
-  const [changeImgs] = useState([]);
-  const firstTable = ['fourthRing', 'thirdRing', 'firstRing'];
-  const secondTable = ['fourthWatch', 'fifthWatch', 'sixthWatch'];
-  const thirdTable = ['firstRing', 'sixthWatch', 'fourthRing'];
+  const [changeImgs, setImgs] = useState([]);
+  const [loading] = useState(true);
+
   useEffect(() => {
+    const firstTable = ['fourthRing', 'thirdRing', 'firstRing'];
+    const secondTable = ['fourthWatch', 'fifthWatch', 'sixthWatch'];
+    const thirdTable = ['firstRing', 'sixthWatch', 'fourthRing'];
+
     if (location.pathname === '/Bijouterie') {
-      firstTable.forEach((e) => {
-        changeImgs.push(e);
-      });
+      setImgs(firstTable);
     }
     if (location.pathname === '/Horlogerie') {
-      secondTable.forEach((e) => {
-        changeImgs.push(e);
-      });
+      setImgs(secondTable);
     }
     if (location.pathname === '/') {
-      thirdTable.forEach((e) => {
-        changeImgs.push(e);
-      });
+      setImgs(thirdTable);
     }
   }, []);
-
+  function test() {
+    console.log(changeImgs[1]);
+  }
   useEffect(() => {
     const imgs = document.querySelectorAll('.slider');
     function handleResizeHeader() {
@@ -88,13 +86,14 @@ function Slider() {
             sliderPack.current.style.left = pos + 'px';
           }
         });
-      }, 400);
+      }, 500);
     }
   }, [imgSize, nbSlide]);
 
   return dimensions < 1400 || window.innerWidth < 1400 ? (
     <section className='sliderSection mobilePadding'>
       <aside>
+        {test()}
         <div className='sliderContainer slider-1'>
           <div className='sliderPack' ref={sliderPack}>
             {changeImgs.map((picture, index) => (
@@ -117,6 +116,7 @@ function Slider() {
   ) : (
     <section className='sliderSection'>
       <aside>
+        {test()}
         <div className='sliderAndText'>
           <div className='sliderContainer slider-1'>
             <div className='sliderPack' ref={sliderPack}>

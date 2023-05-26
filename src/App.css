@@ -51,6 +51,8 @@ p {
 }
 button {
   text-transform: uppercase;
+  color: black;
+  transition: 0.8s !important;
 }
 section {
   color: white;
