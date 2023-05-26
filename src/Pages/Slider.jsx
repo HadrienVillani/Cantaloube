@@ -25,6 +25,9 @@ function Slider() {
     if (location.pathname === '/') {
       setImgs(thirdTable);
     }
+    if (location.pathname === '/Accueil') {
+      setImgs(thirdTable);
+    }
   }, []);
   function test() {
     console.log(changeImgs[1]);
@@ -46,11 +49,9 @@ function Slider() {
   useEffect(() => {
     let pageLocation = location.pathname;
 
-    if (dimensions > 1400 || window.innerWidth > 1400) {
-      setTitlePage(pageLocation.slice('1'));
-      if (pageLocation === '/') {
-        setTitlePage('Acceuil');
-      }
+    setTitlePage(pageLocation.slice('1'));
+    if (pageLocation === '/') {
+      setTitlePage('Acceuil');
     }
   }, [location.pathname, dimensions]);
   useEffect(() => {
