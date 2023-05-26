@@ -80,12 +80,12 @@ self.__precacheManifest = [
     "url": "/Cantaloube/static/media/sixthWatch.7a4bedca.webp"
   },
   {
-    "revision": "674f50d287a8c48dc19ba404d20fe713",
-    "url": "/Cantaloube/static/media/fontawesome-webfont.674f50d2.eot"
-  },
-  {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
     "url": "/Cantaloube/static/media/fontawesome-webfont.af7ae505.woff2"
+  },
+  {
+    "revision": "674f50d287a8c48dc19ba404d20fe713",
+    "url": "/Cantaloube/static/media/fontawesome-webfont.674f50d2.eot"
   },
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
@@ -100,7 +100,7 @@ self.__precacheManifest = [
     "url": "/Cantaloube/static/media/fontawesome-webfont.912ec66d.svg"
   },
   {
-    "revision": "3f4cb1a1b4d7efc41ad1ab66e577516b",
+    "revision": "91b9f5f5453896e21bcfc2d48c20b99b",
     "url": "/Cantaloube/index.html"
   }
 ];
