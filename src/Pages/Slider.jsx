@@ -29,9 +29,7 @@ function Slider() {
       setImgs(thirdTable);
     }
   }, []);
-  function test() {
-    console.log(changeImgs[1]);
-  }
+
   useEffect(() => {
     const imgs = document.querySelectorAll('.slider');
     function handleResizeHeader() {
@@ -94,7 +92,6 @@ function Slider() {
   return dimensions < 1400 || window.innerWidth < 1400 ? (
     <section className='sliderSection mobilePadding'>
       <aside>
-        {test()}
         <div className='sliderContainer slider-1'>
           <div className='sliderPack' ref={sliderPack}>
             {changeImgs.map((picture, index) => (
@@ -117,7 +114,6 @@ function Slider() {
   ) : (
     <section className='sliderSection'>
       <aside>
-        {test()}
         <div className='sliderAndText'>
           <div className='sliderContainer slider-1'>
             <div className='sliderPack' ref={sliderPack}>
