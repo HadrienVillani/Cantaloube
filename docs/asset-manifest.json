@@ -1,7 +1,7 @@
 {
   "main.css": "/Cantaloube/static/css/main.51d08508.chunk.css",
-  "main.js": "/Cantaloube/static/js/main.e03434ab.chunk.js",
-  "main.js.map": "/Cantaloube/static/js/main.e03434ab.chunk.js.map",
+  "main.js": "/Cantaloube/static/js/main.88b705da.chunk.js",
+  "main.js.map": "/Cantaloube/static/js/main.88b705da.chunk.js.map",
   "static/css/1.f53926be.chunk.css": "/Cantaloube/static/css/1.f53926be.chunk.css",
   "static/js/1.282f394c.chunk.js": "/Cantaloube/static/js/1.282f394c.chunk.js",
   "static/js/1.282f394c.chunk.js.map": "/Cantaloube/static/js/1.282f394c.chunk.js.map",
@@ -24,6 +24,6 @@
   "static/css/main.51d08508.chunk.css.map": "/Cantaloube/static/css/main.51d08508.chunk.css.map",
   "static/css/1.f53926be.chunk.css.map": "/Cantaloube/static/css/1.f53926be.chunk.css.map",
   "index.html": "/Cantaloube/index.html",
-  "precache-manifest.2e654d6900f598f18e0030a95f9fe8e7.js": "/Cantaloube/precache-manifest.2e654d6900f598f18e0030a95f9fe8e7.js",
+  "precache-manifest.86ce928c45d16a2d24557416294f65f5.js": "/Cantaloube/precache-manifest.86ce928c45d16a2d24557416294f65f5.js",
   "service-worker.js": "/Cantaloube/service-worker.js"
 }
