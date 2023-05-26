@@ -1,7 +1,7 @@
 {
   "main.css": "/Cantaloube/static/css/main.51d08508.chunk.css",
-  "main.js": "/Cantaloube/static/js/main.88b705da.chunk.js",
-  "main.js.map": "/Cantaloube/static/js/main.88b705da.chunk.js.map",
+  "main.js": "/Cantaloube/static/js/main.ee943278.chunk.js",
+  "main.js.map": "/Cantaloube/static/js/main.ee943278.chunk.js.map",
   "static/css/1.f53926be.chunk.css": "/Cantaloube/static/css/1.f53926be.chunk.css",
   "static/js/1.282f394c.chunk.js": "/Cantaloube/static/js/1.282f394c.chunk.js",
   "static/js/1.282f394c.chunk.js.map": "/Cantaloube/static/js/1.282f394c.chunk.js.map",
@@ -21,9 +21,9 @@
   "static/media/firstRing.webp": "/Cantaloube/static/media/firstRing.90293b15.webp",
   "static/media/seventhRing.webp": "/Cantaloube/static/media/seventhRing.7f000dde.webp",
   "static/media/font-awesome.min.css": "/Cantaloube/static/media/fontawesome-webfont.912ec66d.svg",
-  "static/css/main.51d08508.chunk.css.map": "/Cantaloube/static/css/main.51d08508.chunk.css.map",
   "static/css/1.f53926be.chunk.css.map": "/Cantaloube/static/css/1.f53926be.chunk.css.map",
+  "static/css/main.51d08508.chunk.css.map": "/Cantaloube/static/css/main.51d08508.chunk.css.map",
   "index.html": "/Cantaloube/index.html",
-  "precache-manifest.86ce928c45d16a2d24557416294f65f5.js": "/Cantaloube/precache-manifest.86ce928c45d16a2d24557416294f65f5.js",
+  "precache-manifest.1fda42add23c025d7682b15994aa7502.js": "/Cantaloube/precache-manifest.1fda42add23c025d7682b15994aa7502.js",
   "service-worker.js": "/Cantaloube/service-worker.js"
 }
